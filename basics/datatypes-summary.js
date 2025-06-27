@@ -20,12 +20,12 @@ let email;
 const id = Symbol('123')
 const id_2 = Symbol('123')
 
-console.log(id===id_2);
+//console.log(id===id_2);
 
-console.log(id==id_2);
+///console.log(id==id_2);
 
 const bignumber = 3456789456789765435678765434567897654n
-console.log(typeof(bignumber));
+//console.log(typeof(bignumber));
 
 
 // Non primitive (Refernce) - Array, Object, Functions
@@ -36,14 +36,44 @@ let obj = {
       age :22
 }
 
-console.log(heros);
-console.log(typeof(heros));
-console.log(typeof(obj));
+console.log(typeof heros);
+//console.log(typeof(heros));
+//console.log(typeof(obj));
 
 const myfuction= function(){
     console.log("Hello World");
     
 }
 
-console.log(typeof myfuction);
-console.log(typeof heros);
+//console.log(typeof myfuction);
+//console.log(typeof heros);
+
+
+// +++++++++++++++++++++++++  +++++++++++++++++++++++++++++++++++++++++
+
+// memory - stack (primitive) -copy , heap (non-primitive) - reference 
+
+let myName ="Pratiksha"
+
+let newName = myName
+
+newName = "Sakshi"
+
+console.log(myName);
+console.log(newName);
+
+let user1= {
+    name : "Rudhav",
+    age : 1
+
+}
+
+console.log(user1);
+
+let user2 = user1
+user2.name = "Prathmesh"
+
+console.log(user2);
+console.log(user1);
+
+
